@@ -4,6 +4,7 @@
 /* HEADER */
 
 header {
+  background-color: rgb(210, 224, 236);
   display: flex;
 }
 
@@ -17,6 +18,30 @@ li {
 }
 a {
   color: black;
+}
+div {
+  background-color: aliceblue;
+  width: 200;
+  height: 200;
+  margin-left: 200;
+  margin-top: 200;
+
+  animation-name: shake;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes shake {
+  25% {
+    transform: scale(1.2);
+  }
+
+  40% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
 }
 
 @media screen and (max-width: 410px) {
@@ -35,6 +60,7 @@ a {
 }
 .main-img {
   width: 30%;
+  margin-top: 5%;
 }
 .contact-container {
   display: grid;
