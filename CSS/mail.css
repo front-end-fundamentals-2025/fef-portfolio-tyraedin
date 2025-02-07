@@ -1,5 +1,7 @@
 * {
   font-family: "Libre Baskerville", serif;
+  color: rgb(12, 12, 85);
+  background-color: aliceblue;
 }
 /* HEADER */
 
@@ -21,8 +23,8 @@ a {
 }
 div {
   background-color: aliceblue;
-  width: 200;
-  height: 200;
+  width: 10;
+  height: 10;
   margin-left: 200;
   margin-top: 200;
   animation-name: shake;
