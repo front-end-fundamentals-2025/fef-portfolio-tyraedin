@@ -25,7 +25,6 @@ div {
   height: 200;
   margin-left: 200;
   margin-top: 200;
-
   animation-name: shake;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
@@ -73,5 +72,5 @@ div {
 }
 footer {
   margin-top: 3rem;
-  border-top: 1px solid brown;
+  border-top: 1px solid black;
 }
