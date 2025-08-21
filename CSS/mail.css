@@ -35,7 +35,6 @@ a {
   text-decoration: none;
 }
 
-
 div.animated-box {
   background-color: aliceblue;
   width: 10px;
@@ -59,7 +58,6 @@ div.animated-box {
   }
 }
 
-
 @media screen and (max-width: 410px) {
   header,
   ul {
@@ -73,7 +71,6 @@ div.animated-box {
   }
 }
 
-
 img {
   max-width: 100%;
   height: auto;
@@ -85,7 +82,6 @@ img {
   width: 100%;
   margin-top: 5%;
 }
-
 
 .contact-container {
   display: grid;
@@ -103,4 +99,4 @@ footer {
   margin-top: 3rem;
   border-top: 1px solid black;
   padding-top: 1rem;
-  text-al
+}
