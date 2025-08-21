@@ -1,31 +1,47 @@
+/* GLOBAL STYLES */
 * {
   font-family: "Libre Baskerville", serif;
   color: rgb(12, 12, 85);
+  box-sizing: border-box;
 }
-/* HEADER */
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
 header {
   background-color: rgb(210, 224, 236);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
 ul {
   display: flex;
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
+
 li {
   margin-left: 3rem;
 }
+
 a {
   color: black;
+  text-decoration: none;
 }
-div {
+
+
+div.animated-box {
   background-color: aliceblue;
-  width: 10;
-  height: 10;
-  margin-left: 200;
-  margin-top: 200;
+  width: 10px;
+  height: 10px;
+  margin-left: 200px;
+  margin-top: 200px;
   animation-name: shake;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
@@ -35,7 +51,6 @@ div {
   25% {
     transform: scale(1.2);
   }
-
   40% {
     transform: rotate(-20deg) scale(1.2);
   }
@@ -44,34 +59,48 @@ div {
   }
 }
 
+
 @media screen and (max-width: 410px) {
   header,
   ul {
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
   }
 
   li {
-    margin-left: 0%;
+    margin-left: 0;
+    margin-bottom: 1rem;
   }
 }
-.Peacock {
-  width: 30%;
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
+
+.Peacock,
 .main-img {
-  width: 30%;
+  width: 100%;
   margin-top: 5%;
 }
+
+
 .contact-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
 }
-/*PHOTOS*/
 
+/* PHOTOS */
 .images {
   width: 100%;
 }
+
+/* FOOTER */
 footer {
   margin-top: 3rem;
   border-top: 1px solid black;
-}
+  padding-top: 1rem;
+  text-al
